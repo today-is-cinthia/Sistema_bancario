@@ -1,0 +1,14 @@
+C:\control_banco\banco\bin\Debug\banco.exe.config
+C:\control_banco\banco\bin\Debug\banco.exe
+C:\control_banco\banco\bin\Debug\banco.pdb
+C:\control_banco\banco\obj\Debug\banco.csproj.AssemblyReference.cache
+C:\control_banco\banco\obj\Debug\banco.csproj.SuggestedBindingRedirects.cache
+C:\control_banco\banco\obj\Debug\banco.SB.resources
+C:\control_banco\banco\obj\Debug\banco.caja.resources
+C:\control_banco\banco\obj\Debug\banco.cliente.resources
+C:\control_banco\banco\obj\Debug\banco.login.resources
+C:\control_banco\banco\obj\Debug\banco.Properties.Resources.resources
+C:\control_banco\banco\obj\Debug\banco.csproj.GenerateResource.cache
+C:\control_banco\banco\obj\Debug\banco.csproj.CoreCompileInputs.cache
+C:\control_banco\banco\obj\Debug\banco.exe
+C:\control_banco\banco\obj\Debug\banco.pdb
