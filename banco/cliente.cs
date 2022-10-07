@@ -17,27 +17,25 @@ namespace banco
             InitializeComponent();
         }
 
-        Banco Control = new Banco();
         void agregar(string servicio)
         {
-            Control.Encolar(txtNombre.Text, servicio);
+            Banco.Encolar(txtNombre.Text, servicio);
             grid.Rows.Clear();
             grid2.Rows.Clear();
-            foreach (var item in Control.nombres)
+            foreach (var item in Banco.nombres)
             {
                     DataGridViewRow filas = new DataGridViewRow();
                     filas.CreateCells(grid);
                     filas.Cells[0].Value = item;
                     grid.Rows.Add(filas);
             }
-            foreach (var item in Control.sevicios)
+            foreach (var item in Banco.sevicios)
             {
                 DataGridViewRow filas = new DataGridViewRow();
                 filas.CreateCells(grid2);
                 filas.Cells[0].Value = item;
                 grid2.Rows.Add(filas);
             }
-
             txtNombre.Clear();
             txtNombre.Focus();
 
@@ -103,6 +101,15 @@ namespace banco
         private void btnServicios_Click(object sender, EventArgs e)
         {
             agregar("Servicio Bancario");
+        }
+
+        private void eduButton1_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void grid_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

@@ -43,7 +43,6 @@
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnServicios = new CustomControls.Estudiantes.EduButton();
             this.btnCaja = new CustomControls.Estudiantes.EduButton();
-            this.btnRegresar = new CustomControls.Estudiantes.EduButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grid)).BeginInit();
@@ -53,7 +52,6 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(4)))), ((int)(((byte)(4)))));
-            this.panel1.Controls.Add(this.btnRegresar);
             this.panel1.Controls.Add(this.lbHora);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -66,7 +64,7 @@
             this.lbHora.AutoSize = true;
             this.lbHora.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbHora.ForeColor = System.Drawing.Color.White;
-            this.lbHora.Location = new System.Drawing.Point(688, 9);
+            this.lbHora.Location = new System.Drawing.Point(27, 9);
             this.lbHora.Name = "lbHora";
             this.lbHora.Size = new System.Drawing.Size(51, 20);
             this.lbHora.TabIndex = 0;
@@ -115,6 +113,10 @@
             // 
             // grid
             // 
+            this.grid.AllowUserToAddRows = false;
+            this.grid.AllowUserToDeleteRows = false;
+            this.grid.AllowUserToResizeColumns = false;
+            this.grid.AllowUserToResizeRows = false;
             this.grid.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.grid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -137,19 +139,26 @@
             this.grid.GridColor = System.Drawing.Color.Cornsilk;
             this.grid.Location = new System.Drawing.Point(399, 71);
             this.grid.Name = "grid";
+            this.grid.ReadOnly = true;
             this.grid.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.grid.RowHeadersVisible = false;
             this.grid.Size = new System.Drawing.Size(184, 185);
             this.grid.TabIndex = 6;
+            this.grid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grid_CellContentClick);
             // 
             // Cnombre
             // 
             this.Cnombre.DataPropertyName = "EONombres";
             this.Cnombre.HeaderText = "Nombre";
             this.Cnombre.Name = "Cnombre";
+            this.Cnombre.ReadOnly = true;
             // 
             // grid2
             // 
+            this.grid2.AllowUserToAddRows = false;
+            this.grid2.AllowUserToDeleteRows = false;
+            this.grid2.AllowUserToResizeColumns = false;
+            this.grid2.AllowUserToResizeRows = false;
             this.grid2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.grid2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -172,6 +181,7 @@
             this.grid2.GridColor = System.Drawing.Color.Cornsilk;
             this.grid2.Location = new System.Drawing.Point(580, 71);
             this.grid2.Name = "grid2";
+            this.grid2.ReadOnly = true;
             this.grid2.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.grid2.RowHeadersVisible = false;
             this.grid2.Size = new System.Drawing.Size(191, 185);
@@ -182,6 +192,7 @@
             this.dataGridViewTextBoxColumn1.DataPropertyName = "EOServicio";
             this.dataGridViewTextBoxColumn1.HeaderText = "Servicio";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
             // 
             // btnServicios
             // 
@@ -225,25 +236,6 @@
             this.btnCaja.UseVisualStyleBackColor = false;
             this.btnCaja.Click += new System.EventHandler(this.btnCaja_Click);
             // 
-            // btnRegresar
-            // 
-            this.btnRegresar.BackColor = System.Drawing.Color.Transparent;
-            this.btnRegresar.BackgroundColor = System.Drawing.Color.Transparent;
-            this.btnRegresar.BorderColor = System.Drawing.Color.Transparent;
-            this.btnRegresar.BorderRadius = 0;
-            this.btnRegresar.BorderSize = 0;
-            this.btnRegresar.FlatAppearance.BorderSize = 0;
-            this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegresar.ForeColor = System.Drawing.Color.White;
-            this.btnRegresar.Image = global::banco.Properties.Resources.chevron_left_regular_36;
-            this.btnRegresar.Location = new System.Drawing.Point(3, 3);
-            this.btnRegresar.Name = "btnRegresar";
-            this.btnRegresar.Size = new System.Drawing.Size(44, 36);
-            this.btnRegresar.TabIndex = 6;
-            this.btnRegresar.TextColor = System.Drawing.Color.White;
-            this.btnRegresar.UseVisualStyleBackColor = false;
-            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
-            // 
             // cliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -258,7 +250,9 @@
             this.Controls.Add(this.btnServicios);
             this.Controls.Add(this.btnCaja);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "cliente";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "cliente";
             this.Load += new System.EventHandler(this.cliente_Load);
             this.panel1.ResumeLayout(false);
@@ -281,7 +275,6 @@
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label lbHora;
         private System.Windows.Forms.Timer timer1;
-        private CustomControls.Estudiantes.EduButton btnRegresar;
         private System.Windows.Forms.DataGridView grid;
         private System.Windows.Forms.DataGridViewTextBoxColumn Cnombre;
         private System.Windows.Forms.DataGridView grid2;

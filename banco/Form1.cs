@@ -12,6 +12,10 @@ namespace banco
 {
     public partial class login : Form
     {
+        cliente formulario = new cliente();
+        SB formulario2 = new SB();
+        caja formulario3 = new caja();
+        servbanc form4 = new servbanc();
         public login()
         {
             InitializeComponent();
@@ -21,12 +25,7 @@ namespace banco
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            cbRol.DropDownStyle = ComboBoxStyle.DropDownList;
 
-
-            cbRol.Items.Add("Cliente");
-            cbRol.Items.Add("SB");
-            cbRol.Items.Add("CAJA");
 
         }
 
@@ -37,27 +36,54 @@ namespace banco
 
         private void eduButton1_Click(object sender, EventArgs e)
         {
-            if(cbRol.Text == "Cliente")
-            {
-                cliente formulario = new cliente();
-                formulario.Show();
+    
+        }
 
-                this.Hide();
-            }
-            if(cbRol.Text == "SB")
-            {
-                SB formulario2 = new SB();
-                formulario2.Show();
-                this.Hide();
+        private void clienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            formulario.MdiParent = this;
+            formulario.Show();
+            formulario2.Hide();
+            formulario3.Hide();
+            form4.Hide();
+            imagen.Hide();
+            lbbanco.Hide();
+        }
 
-            }
-            if (cbRol.Text == "CAJA")
-            {
-                caja formulario3 = new caja();
-                formulario3.Show();
-                this.Hide();
+        private void adminToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            formulario2.MdiParent = this;
+            formulario2.Show();
+            formulario2.LLenarClientes();
+            formulario.Hide();
+            form4.Hide();
+            formulario3.Hide();
+            imagen.Hide();
+            lbbanco.Hide();
+        }
 
-            }
+        private void cajaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            formulario3.MdiParent = this;
+            formulario3.Show();
+            formulario3.LLenarClientes();
+            formulario2.Hide();
+            form4.Hide();
+            formulario.Hide();
+            imagen.Hide();
+            lbbanco.Hide();
+        }
+
+        private void serviciosBancariosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            form4.MdiParent = this;
+            form4.Show();
+            form4.LLenarClientes();
+            formulario2.Hide();
+            formulario.Hide();
+            formulario3.Hide();
+            imagen.Hide();
+            lbbanco.Hide();
         }
     }
 }

@@ -28,52 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.cbRol = new System.Windows.Forms.ComboBox();
-            this.eduButton1 = new CustomControls.Estudiantes.EduButton();
+            this.lbbanco = new System.Windows.Forms.Label();
             this.imagen = new CustomControls.Estudiantes.EduButton();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.menúToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.adminToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cajaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.serviciosBancariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
+            // lbbanco
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Gadugi", 19F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(120, 135);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(113, 31);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "BANCO ";
-            // 
-            // cbRol
-            // 
-            this.cbRol.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(4)))), ((int)(((byte)(4)))));
-            this.cbRol.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.cbRol.ForeColor = System.Drawing.SystemColors.Info;
-            this.cbRol.FormattingEnabled = true;
-            this.cbRol.Location = new System.Drawing.Point(78, 200);
-            this.cbRol.Name = "cbRol";
-            this.cbRol.Size = new System.Drawing.Size(189, 21);
-            this.cbRol.TabIndex = 2;
-            this.cbRol.SelectedIndexChanged += new System.EventHandler(this.cbRol_SelectedIndexChanged);
-            // 
-            // eduButton1
-            // 
-            this.eduButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(4)))), ((int)(((byte)(4)))));
-            this.eduButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(4)))), ((int)(((byte)(4)))));
-            this.eduButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.eduButton1.BorderRadius = 10;
-            this.eduButton1.BorderSize = 0;
-            this.eduButton1.FlatAppearance.BorderSize = 0;
-            this.eduButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.eduButton1.ForeColor = System.Drawing.Color.White;
-            this.eduButton1.Location = new System.Drawing.Point(109, 278);
-            this.eduButton1.Name = "eduButton1";
-            this.eduButton1.Size = new System.Drawing.Size(126, 36);
-            this.eduButton1.TabIndex = 3;
-            this.eduButton1.Text = "INGRESAR";
-            this.eduButton1.TextColor = System.Drawing.Color.White;
-            this.eduButton1.UseVisualStyleBackColor = false;
-            this.eduButton1.Click += new System.EventHandler(this.eduButton1_Click);
+            this.lbbanco.AutoSize = true;
+            this.lbbanco.BackColor = System.Drawing.Color.White;
+            this.lbbanco.Font = new System.Drawing.Font("Gadugi", 19F, System.Drawing.FontStyle.Bold);
+            this.lbbanco.ForeColor = System.Drawing.Color.Red;
+            this.lbbanco.Location = new System.Drawing.Point(313, 232);
+            this.lbbanco.Name = "lbbanco";
+            this.lbbanco.Size = new System.Drawing.Size(113, 31);
+            this.lbbanco.TabIndex = 1;
+            this.lbbanco.Text = "BANCO ";
             // 
             // imagen
             // 
@@ -86,28 +62,80 @@
             this.imagen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.imagen.ForeColor = System.Drawing.Color.Turquoise;
             this.imagen.Image = global::banco.Properties.Resources.bank_solid_96__1_;
-            this.imagen.Location = new System.Drawing.Point(118, 35);
+            this.imagen.Location = new System.Drawing.Point(318, 98);
             this.imagen.Name = "imagen";
             this.imagen.Size = new System.Drawing.Size(108, 112);
             this.imagen.TabIndex = 0;
             this.imagen.TextColor = System.Drawing.Color.Turquoise;
             this.imagen.UseVisualStyleBackColor = false;
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menúToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(819, 24);
+            this.menuStrip1.TabIndex = 4;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // menúToolStripMenuItem
+            // 
+            this.menúToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.clienteToolStripMenuItem,
+            this.adminToolStripMenuItem,
+            this.cajaToolStripMenuItem,
+            this.serviciosBancariosToolStripMenuItem});
+            this.menúToolStripMenuItem.Name = "menúToolStripMenuItem";
+            this.menúToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
+            this.menúToolStripMenuItem.Text = "Menú";
+            // 
+            // clienteToolStripMenuItem
+            // 
+            this.clienteToolStripMenuItem.Name = "clienteToolStripMenuItem";
+            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
+            this.clienteToolStripMenuItem.Text = "Cliente";
+            this.clienteToolStripMenuItem.Click += new System.EventHandler(this.clienteToolStripMenuItem_Click);
+            // 
+            // adminToolStripMenuItem
+            // 
+            this.adminToolStripMenuItem.Name = "adminToolStripMenuItem";
+            this.adminToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
+            this.adminToolStripMenuItem.Text = "Admin";
+            this.adminToolStripMenuItem.Click += new System.EventHandler(this.adminToolStripMenuItem_Click);
+            // 
+            // cajaToolStripMenuItem
+            // 
+            this.cajaToolStripMenuItem.Name = "cajaToolStripMenuItem";
+            this.cajaToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
+            this.cajaToolStripMenuItem.Text = "Caja";
+            this.cajaToolStripMenuItem.Click += new System.EventHandler(this.cajaToolStripMenuItem_Click);
+            // 
+            // serviciosBancariosToolStripMenuItem
+            // 
+            this.serviciosBancariosToolStripMenuItem.Name = "serviciosBancariosToolStripMenuItem";
+            this.serviciosBancariosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.serviciosBancariosToolStripMenuItem.Text = "Servicios bancarios";
+            this.serviciosBancariosToolStripMenuItem.Click += new System.EventHandler(this.serviciosBancariosToolStripMenuItem_Click);
+            // 
             // login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.ClientSize = new System.Drawing.Size(356, 479);
-            this.Controls.Add(this.eduButton1);
-            this.Controls.Add(this.cbRol);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(819, 496);
+            this.Controls.Add(this.lbbanco);
             this.Controls.Add(this.imagen);
+            this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.IsMdiContainer = true;
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -116,9 +144,13 @@
         #endregion
 
         private CustomControls.Estudiantes.EduButton imagen;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox cbRol;
-        private CustomControls.Estudiantes.EduButton eduButton1;
+        private System.Windows.Forms.Label lbbanco;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem menúToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem clienteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem adminToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cajaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem serviciosBancariosToolStripMenuItem;
     }
 }
 
