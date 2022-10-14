@@ -1,5 +1,5 @@
 # Sistema_bancario
 
-Sistema de espera bancario con roles de usuario usando Colas y NetForms en C#
+Sistema de espera bancario con roles de usuario usando Colas y WinForms en C#
 
-Waiting line bank system builded with user roles using C# NetForms and integrated Queue classes
+Waiting line bank system builded with user roles using C# WinForms and integrated Queue classes
