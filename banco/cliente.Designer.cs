@@ -51,7 +51,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(4)))), ((int)(((byte)(4)))));
+            this.panel1.BackColor = System.Drawing.SystemColors.Desktop;
             this.panel1.Controls.Add(this.lbHora);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -82,7 +82,7 @@
             // 
             // txtNombre
             // 
-            this.txtNombre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.txtNombre.BackColor = System.Drawing.Color.White;
             this.txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.75F);
             this.txtNombre.ForeColor = System.Drawing.SystemColors.WindowFrame;
@@ -104,6 +104,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.pictureBox1.Image = global::banco.Properties.Resources.user_solid_84;
             this.pictureBox1.Location = new System.Drawing.Point(31, 63);
             this.pictureBox1.Name = "pictureBox1";
@@ -125,7 +126,7 @@
             this.grid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.grid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(4)))), ((int)(((byte)(4)))));
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Desktop;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.HighlightText;
@@ -167,7 +168,7 @@
             this.grid2.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.grid2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(4)))), ((int)(((byte)(4)))));
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Desktop;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.HighlightText;
@@ -197,8 +198,8 @@
             // btnServicios
             // 
             this.btnServicios.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnServicios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(4)))), ((int)(((byte)(4)))));
-            this.btnServicios.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(4)))), ((int)(((byte)(4)))));
+            this.btnServicios.BackColor = System.Drawing.SystemColors.Desktop;
+            this.btnServicios.BackgroundColor = System.Drawing.SystemColors.Desktop;
             this.btnServicios.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btnServicios.BorderRadius = 15;
             this.btnServicios.BorderSize = 0;
@@ -218,8 +219,8 @@
             // btnCaja
             // 
             this.btnCaja.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.btnCaja.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(4)))), ((int)(((byte)(4)))));
-            this.btnCaja.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(4)))), ((int)(((byte)(4)))));
+            this.btnCaja.BackColor = System.Drawing.SystemColors.Desktop;
+            this.btnCaja.BackgroundColor = System.Drawing.SystemColors.Desktop;
             this.btnCaja.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btnCaja.BorderRadius = 15;
             this.btnCaja.BorderSize = 0;
@@ -252,7 +253,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "cliente";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "cliente";
             this.Load += new System.EventHandler(this.cliente_Load);
             this.panel1.ResumeLayout(false);

@@ -47,7 +47,6 @@ namespace banco
             formulario3.Hide();
             form4.Hide();
             imagen.Hide();
-            lbbanco.Hide();
         }
 
         private void adminToolStripMenuItem_Click(object sender, EventArgs e)
@@ -59,7 +58,6 @@ namespace banco
             form4.Hide();
             formulario3.Hide();
             imagen.Hide();
-            lbbanco.Hide();
         }
 
         private void cajaToolStripMenuItem_Click(object sender, EventArgs e)
@@ -71,7 +69,6 @@ namespace banco
             form4.Hide();
             formulario.Hide();
             imagen.Hide();
-            lbbanco.Hide();
         }
 
         private void serviciosBancariosToolStripMenuItem_Click(object sender, EventArgs e)
@@ -83,7 +80,16 @@ namespace banco
             formulario.Hide();
             formulario3.Hide();
             imagen.Hide();
-            lbbanco.Hide();
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void imagen_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
